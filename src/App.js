@@ -34,7 +34,6 @@ const App = () => {
         setMapCountries(response.data);
       })
       .catch((error) => {
-        console.log(error);
         setLoading(false);
       });
   };
@@ -49,17 +48,12 @@ const App = () => {
         ]);
         setMapZoom(4);
       })
-      .catch((error) => {
-        console.log(error);
-      });
+      .catch((error) => {});
   };
 
   const onChangeCountry = (e) => {
     const countryCode = e.target.value;
-    const countryName = countries.find(
-      (country) => country.value === countryCode
-    );
-    console.log("country name ", countryName);
+
     const url =
       countryCode === "worldwide"
         ? "https://disease.sh/v3/covid-19/all"
@@ -74,12 +68,8 @@ const App = () => {
       setLoading(false);
     }, 2000);
   }, []);
-  useEffect(() => {
-    console.log("country info=>", countryInfo);
-  }, [countryInfo]);
-  useEffect(() => {
-    console.log("mapCenter info=>", mapCenter);
-  }, [mapCenter]);
+  useEffect(() => {}, [countryInfo]);
+  useEffect(() => {}, [mapCenter]);
   return !loading ? (
     <div className="app__main">
       <div className="app__content">

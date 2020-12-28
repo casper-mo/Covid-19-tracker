@@ -73,7 +73,7 @@ const LineGraph = ({ casesType }) => {
         const chartData = buildChartData(response.data, casesType);
         setData(chartData);
       })
-      .catch((error) => console.log(error.response));
+      .catch();
     casesType === "recovered" ? setBgColor("#7dd71d") : setBgColor("#CC1034");
   }, [casesType]);
   return (

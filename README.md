@@ -2,7 +2,7 @@
 
 ### [Live Site](https://covid-19-b3366.web.app/)
 
-![Messenger clone ](https://www.mediafire.com/view/lrya92ow58gezjl/covid-19.png)
+![Messenger clone ](https://www.mediafire.com/convkey/f309/lrya92ow58gezjlzg.jpg)
 
 ## Install
 

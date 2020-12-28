@@ -125,7 +125,7 @@ const App = () => {
         <Card>
           <h3>Live Cases by Country</h3>
           <Table countries={tableData} />
-          <h3>Worldwide new Cases</h3>
+          <h3>Worldwide new {caseType}</h3>
           <LineGraph casesType={caseType} />
         </Card>
       </div>

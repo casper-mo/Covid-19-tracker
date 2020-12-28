@@ -1,0 +1,25 @@
+.table {
+  height: 400px;
+  overflow-y: scroll;
+  margin-top: 1rem;
+  background-color: #fff;
+  color: #6a5d5d;
+  margin-bottom: 1rem;
+}
+.table > table {
+  width: 100%;
+}
+.table tr {
+  display: flex;
+  justify-content: space-between;
+}
+.table td {
+  padding: 0.5rem;
+}
+.table tr:nth-child(odd) {
+  background-color: #eee;
+}
+.table__cases {
+  font-weight: 400;
+  font-size: 1rem;
+}
